@@ -1,0 +1,78 @@
+*
+    box-sizing: border-box
+body
+    background-color: rgba(182, 184, 220, .6)
+.container
+    width: 800px
+    margin: 0 auto
+    padding: 40px 20px 
+
+.title
+    display: flex
+    justify-content: space-between
+    padding: 20px
+    background-color: #1f5c8b
+.city_name
+    font-size: 25px
+    font-weight: 400
+    color: #ffffff
+.date 
+    font-size: 25px
+    font-weight: 400
+    font-weight: 400
+    color: #ffffff
+.weather
+    padding: 20px 0 
+    border: 1px solid black
+    border-bottom: none
+    background-color: #1d4277
+    &_day
+        font-size: 30px
+        font-weight: 200
+        color: #ffffff
+    &_humdity
+        font-size: 25px
+        font-weight: 20
+        color: #ffffff
+    &_temperature
+        font-size: 40px
+        font-weight: 20
+        color: #ffffff
+    &_img
+        display: block
+        margin: 0 auto
+        width: 60px
+        height: 60px
+    &_type
+        text-align: center
+        font-size: 25px
+        font-weight: 20
+        color: #ffffff
+
+.accordion
+    &_item
+        background: linear-gradient(0deg, #3779b5 0%, #143b58 100%)
+        &_trigger
+            padding: 10px 0 
+            &_day
+                font-size: 30px
+                font-weight: 200
+                color: #ffffff
+            &_img
+                img
+                    display: block
+                    margin: 0 auto
+                    width: 40px
+                    height: 40px
+            &_temp
+                font-size: 30px
+                font-weight: 20
+                color: #ffffff
+
+        &_content
+            display: none
+            transition: 0.5s all
+.active
+    display: block
+    
+    
