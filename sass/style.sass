@@ -12,15 +12,16 @@ body
     justify-content: space-between
     padding: 20px
     background-color: #1f5c8b
-.city_name
-    font-size: 25px
-    font-weight: 400
-    color: #ffffff
-.date 
-    font-size: 25px
-    font-weight: 400
-    font-weight: 400
-    color: #ffffff
+    &_cityName
+        font-size: 25px
+        font-weight: 400
+        color: #ffffff
+    &_date 
+        font-size: 25px
+        font-weight: 400
+        font-weight: 400
+        color: #ffffff
+        
 .weather
     padding: 20px 0 
     border: 1px solid black
@@ -41,8 +42,8 @@ body
     &_img
         display: block
         margin: 0 auto
-        width: 60px
-        height: 60px
+        width: 100px
+        height: 100px
     &_type
         text-align: center
         font-size: 25px
@@ -59,11 +60,10 @@ body
                 font-weight: 200
                 color: #ffffff
             &_img
-                img
-                    display: block
-                    margin: 0 auto
-                    width: 40px
-                    height: 40px
+                display: block
+                margin: 0 auto
+                width: 50px
+                height: 50px
             &_temp
                 font-size: 30px
                 font-weight: 20
@@ -75,4 +75,16 @@ body
 .active
     display: block
     
-    
+.choose
+  
+    margin-bottom: 40px
+    text-align: center
+    &_label
+    &_select
+        width: 300px
+        height: 40px
+        border-radius: 4px
+    &_btn
+        height: 40px
+        border-radius: 6px
+        background: green

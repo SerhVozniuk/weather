@@ -12,40 +12,323 @@
 <body>
     <header>
         <div class="container">
-            <form action="">
-                <input type="text" placeholder="Search..." value="" class="search_city">
-                <button type="submit">Go</button>
-            </form>
-            
-            <!-- <div class="title">
-                <div class="city_name">City Name</div>
-                <div class="date">23 MAY 2020</div>
-            </div> -->
+        <form class="choose" action="" onsubmit="return false">
+            <label class="choose_label" for="chooseCity">Choose a city: </label>
+            <select class="choose_select" name="city" id="city">
+                <optgroup label="United States">
+                    <option value="New York">New York</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                </optgroup>
+                
+                <optgroup label="Europe">
+                    <option value="London">London</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Rome">Rome</option>
+                </optgroup>
 
-            <!-- <div class="weather">
-                <div class="row">
-                    <div class="col-md-4 offset-md-1">
-                        <div class="weather_day">monday</div>
-                        <div class="weather_humdity">humdity</div>
-                        <div class="weather_temperature">20&deg;</div>
-                    </div>
-                    <div class="col-md-4 offset-md-2">
-                        <img class="weather_img" src="img/cloudy.png" alt="">
-                        <div class="weather_type">clear</div>
+                <optgroup label="Ukraine">
+                    <option value="Kyiv">Kyiv</option>
+                </optgroup>
+
+                <optgroup label="Azia">
+                    <option value="Istanbul">Istanbul</option>
+                    <option value="Kabul">Kabul</option>
+                    <option value="Seoul">Seoul</option>
+                </optgroup>
+            </select>
+
+            <!-- <button class="choose_btn">Submit</button> -->
+            <button class="choose_btn">Submit</button>
+        </form>
+        
+        <div class="title">
+            <div class="title_cityName"></div>
+            <div class="title_date"></div>
+        </div>
+
+        <div class="weather">
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    <div class="weather_day"></div>
+                    <div class="weather_humdity"></div>
+                    <div class="weather_temperature"></div>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    <img class="weather_img" id="weather_img" src="" alt="">
+                    <div class="weather_type"></div>
+                </div>
+            </div>
+        </div>
+            
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-            
-
-           <!--  <div class="accordion">
-                
-            </div> -->
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature">&deg;</div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature">;</div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion_item">
+                <div class="accordion_item_trigger">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <div class="accordion_item_trigger_day"></div>
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <img class="accordion_item_trigger_img" src="" alt="">
+                        </div>
+                        <div class="col-md-2 offset-md-1">
+                            <div class="accordion_item_trigger_temp"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion_item_content">
+                    <div class="weather">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-1">
+                                <div class="weather_day"></div>
+                                <div class="weather_humdity"></div>
+                                <div class="weather_temperature"></div>
+                            </div>
+                            <div class="col-md-4 offset-md-2">
+                                <img class="weather_img" src="" alt="">
+                                <div class="weather_type"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
-    <script src="js/Class/Title.js"></script>
-    <script src="js/Class/ToDayWeather.js"></script>
-    <script src="js/Class/FutureWeather.js"></script>
-    <script src="js/weather.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

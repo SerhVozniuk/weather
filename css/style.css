@@ -24,13 +24,13 @@ body {
   background-color: #1f5c8b;
 }
 
-.city_name {
+.title_cityName {
   font-size: 25px;
   font-weight: 400;
   color: #ffffff;
 }
 
-.date {
+.title_date {
   font-size: 25px;
   font-weight: 400;
   font-weight: 400;
@@ -65,8 +65,8 @@ body {
 .weather_img {
   display: block;
   margin: 0 auto;
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
 }
 
 .weather_type {
@@ -91,11 +91,11 @@ body {
   color: #ffffff;
 }
 
-.accordion_item_trigger_img img {
+.accordion_item_trigger_img {
   display: block;
   margin: 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
 .accordion_item_trigger_temp {
@@ -112,5 +112,22 @@ body {
 
 .active {
   display: block;
+}
+
+.choose {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.choose_select {
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.choose_btn {
+  height: 40px;
+  border-radius: 6px;
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */
